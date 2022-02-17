@@ -38,20 +38,22 @@
     <div class="scroll-down">Scroll down to view next<br><span class="glyphicon glyphicon-arrow-down"></span></div>
   </div>
   <div class = "reader everything" id="text-reader">
-    <ul class="nav nav-pills nav-justified Reader-tabs" >
-      <li class="active" id="text-i"><a href="#pills-text">Paste/Type Text</a></li>
-      <li id="pdf-i"><a href="#pills-pdf">Upload PDF</a></li>
-    </ul>   
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade" id="pills-text" >
+    <ul class="nav nav-pills nav-justified">
+      <li class="active" id="text-i"><a data-toggle="pill" href="#home">Home</a></li>
+      <li id="pdf-i"><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+    </ul>
+    
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
         <h3>Menu 1</h3>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <div class="tab-pane fade" id="pills-pdf" >
-        <h3>Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
       </div>
-    </div>   
+    </div>
   </div>
   <script>
     $(document).ready(
