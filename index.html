@@ -39,14 +39,18 @@
   </div>
   <div class = "reader everything" id="text-reader">
     <ul class="nav nav-pills nav-justified">
-      <li class="active" id="text-i"><a data-toggle="pill" href="#home">Home</a></li>
-      <li id="pdf-i"><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+      <li class="active" id="text-i"><a data-toggle="pill" href="#text-input">Paste/Type text</a></li>
+      <li id="pdf-i"><a data-toggle="pill" href="#menu1">Upload PDF</a></li>
     </ul>
     
     <div class="tab-content">
-      <div id="home" class="tab-pane fade in active">
-        <h3>HOME</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div id="text-input" class="tab-pane fade in active">
+        <label for="comment">Paste or type the text:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea><br>
+        <label>Would you prefer a male or a female voice?</label><br>
+        <label class="radio-inline"><input type="radio" name="optradio" checked>Male</label>
+        <label class="radio-inline"><input type="radio" name="optradio">Female</label><br><br>
+        <button type="submit" class="btn btn-default">Submit</button>
       </div>
       <div id="menu1" class="tab-pane fade">
         <h3>Menu 1</h3>
