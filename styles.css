@@ -85,6 +85,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 3%;
+  font-family: sans-serif;
 }
 /* the tabs in the reader*/
 .Reader-tabs{
@@ -94,17 +95,25 @@
   background-color: #ECECEC;
   border-radius: 10px;
 }
-/* the textarea for inputing the text*/
-#text-input{
-  padding-top: 2%;
-}
 /* radio button to input gender*/
 #gender-input1{
   margin-top: 1%;
 }
-/*submit button in reader for text input*/
-.btn{
+/*submit buttons in reader for text input and pdf input*/
+.btn-t,.btn-p{
   width:100%;
   background-color: #0d6efd;
   color:#FFFFFF;
+}
+/* the input file button that will be visible to the user*/
+#stylefileinput{
+  background-color: gray;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
 }

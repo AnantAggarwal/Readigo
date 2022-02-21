@@ -47,8 +47,8 @@
   <div class = "reader everything" id="text-reader">
     <ul class="nav nav-pills nav-justified">
       <li class="active" id="text-i"><a data-toggle="pill" href="#text-input">Paste/Type text</a></li>
-      <li id="pdf-i"><a data-toggle="pill" href="#menu1">Upload PDF</a></li>
-    </ul>
+      <li id="pdf-i"><a data-toggle="pill" href="#pdf-input">Upload PDF</a></li>
+    </ul><br>
     <!-- input form in the reader-->
     <div class="tab-content">
       <div id="text-input" class="tab-pane fade in active">
@@ -57,11 +57,16 @@
         <label>Would you prefer a male or a female voice?</label><br>
         <label class="radio-inline"><input type="radio" name="optradio" checked>Male</label>
         <label class="radio-inline"><input type="radio" name="optradio">Female</label><br><br>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn-t btn-default">Read Text</button>
       </div>
-      <div id="menu1" class="tab-pane fade">
-        <h3>Menu 1</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div id="pdf-input" class="tab-pane fade">
+        <label for="stylefileinput">Upload The PDF:</label>
+        <input type="file" name="upload" id="fileInput" accept="application/pdf" style="display:none" />
+        <label for="fileInput" id="stylefileinput">Choose File: <span id="file-chosen">No file chosen</span></label><br><br>
+        <label>Would you prefer a male or a female voice?</label><br>
+        <label class="radio-inline"><input type="radio" name="optradio" checked>Male</label>
+        <label class="radio-inline"><input type="radio" name="optradio">Female</label><br><br>
+        <button type="submit" class="btn-p btn-default">Read PDF</button>
       </div>
       </div>
     </div>
@@ -108,7 +113,14 @@
       
     }
     );
-    
+    //For the pdf input styling
+    const actualBtn = document.getElementById('fileInput');
+
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function(){
+      fileChosen.textContent = this.files[0].name
+    })
   </script>
 </body>
 </html>
