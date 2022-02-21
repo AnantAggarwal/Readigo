@@ -27,17 +27,17 @@
 }
 /* Objects inside the navbar*/
 .navbar-objects{
-  color:#3a7ab1;
+  color:#0d6efd;
   font-family:Cursive;
   font-weight: bold;
 }
 /* the glyphicons in the navbar*/
 .icon{
-  color:#3a7ab1;
+  color:#0d6efd;
 }
 /* on hover in the navbar tabs*/
 .li-navbar:hover{
-  background-color: #58CCED;
+  background-color: #0d6efd;
 }
 .li-navbar:hover span{
   color:white;
